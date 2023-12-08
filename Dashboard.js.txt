@@ -1,0 +1,28 @@
+// components/Dashboard.js
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const Dashboard = () => {
+  return (
+    <div className="dashboard-container">
+      <h1>Dashboard</h1>
+      <p>Welcome to the Dashboard!</p>
+
+      {/* Add your dashboard content and components here */}
+      
+      {/* Example links for navigation */}
+      <nav>
+        <ul>
+          <li>
+            <Link to="/dashboard">Home</Link>
+          </li>
+          <li>
+            <Link to="/user-list">User List</Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
+};
+
+export default Dashboard;
